@@ -20,5 +20,5 @@ steps:
     cd /home/azureuser/azurereact
     npm install
     npm run build
-    cp -r build/* /var/www/html/
+    rsync -av /home/azureuser/azurereact/build/ /var/www/html/
   displayName: 'npm install and build'
